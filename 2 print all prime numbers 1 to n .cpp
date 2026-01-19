@@ -1,5 +1,5 @@
 /*
-Exercise 01
+Exercise 02
 Programming Advice - Course 5
 Solved in October 2024
 */
