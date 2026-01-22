@@ -1,0 +1,68 @@
+/*
+Exercise 34
+Programming Advice - Course 5
+Solved in October 2024
+*/
+
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+using namespace std;
+int ReadPositivNumberLess100(string Message) {
+	int n;
+	do {
+		cout << Message;
+		cin >> n;
+	} while (n <= 0 || n > 100);
+	return n;
+}
+
+int RandomNumber(int From, int To) {
+	return rand() % (To - From + 1) + From;
+}
+
+void PrintArray(int Array[], int ArrayLength) {
+	for (int i = 0; i < ArrayLength; i++)
+	{
+		cout << Array[i] << " ";
+	}
+}
+
+void FillArrayWithRandomNumbers(int Array[], int& ArrayLength) {
+
+	for (int i = 0; i < ArrayLength; i++)
+	{
+		Array[i] = RandomNumber(1, 100);
+	}
+}
+
+short ReturnNumberIndexInArray(int Array[],int ArrayLength,int NumberToSearsh) {
+	for (int i = 0; i < ArrayLength; i++)
+	{
+		if (Array[i] == NumberToSearsh) {
+			return i;
+		}
+	}
+	return -1;
+}
+int main()
+{
+	srand((unsigned)time(NULL));
+	int Array[100];
+	int ArrayLength = ReadPositivNumberLess100("Please enter a number of elements\t");
+	FillArrayWithRandomNumbers(Array, ArrayLength);
+	PrintArray(Array, ArrayLength);
+	cout << endl << endl;
+	int NumberToSearsh = ReadPositivNumberLess100("Please enter a number to searsh for?\t");
+	cout << "Number you are looking for is: \t" << NumberToSearsh <<endl;
+
+	short NumberPosition = ReturnNumberIndexInArray(Array, ArrayLength, NumberToSearsh);
+
+	if(NumberPosition==-1)
+		cout << "The number is not found:-(";
+	else
+		cout << "The number found at position: " << NumberPosition << endl
+		<< "The number found its order: " << NumberPosition + 1 << endl;
+	
+	return 0;
+}
