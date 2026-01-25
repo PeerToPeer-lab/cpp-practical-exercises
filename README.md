@@ -27,6 +27,15 @@ All exercises were solved in **October 2024** as part of hands-on practice in C+
 - Demonstrates conditions, loops, and random logic
 - Built as a final project for the course
 
+### 2. Math Quiz (Console Game)
+- Console-based math quiz game
+- User selects number of questions and difficulty (Easy, Medium, Hard)
+- User chooses operation: Addition, Subtraction, Multiplication, Division
+- Tracks total attempts, correct and wrong answers
+- Provides statistics at the end of the game
+- Developed as a final project for Programming Advice – Course 5
+- Created in October 2024
+
 ## ✍️ Author
 AboubakerDev
 
