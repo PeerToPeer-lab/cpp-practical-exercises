@@ -20,6 +20,12 @@ All exercises were solved in **October 2024** as part of hands-on practice in C+
 ## 📂 Structure
 - Each exercise is saved in a separate file
 - Files are named sequentially for clarity (e.g. `Exercise01.cpp`)
+## 🎮 Mini Projects
+
+### 1. Rock Paper Scissors (Console)
+- Simple console-based game
+- Demonstrates conditions, loops, and random logic
+- Built as a final project for the course
 
 ## ✍️ Author
 AboubakerDev
