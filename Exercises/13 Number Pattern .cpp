@@ -1,0 +1,34 @@
+/*
+Exercise 13
+Programming Advice - Course 5
+Solved in October 2024
+*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int ReadPositivNumberLessThan9(string Message) {
+	int n;
+	do {
+		cout << Message;
+		cin >> n;
+	} while (n <= 0 || n > 9);
+	return n;
+}
+void PrintInveredPattern(int Number){
+	int Number2 = 1;
+	for (int i = 0; i < Number; i++)
+	{
+		for (int j = 1; j <= Number2; j++)
+		{
+			cout << Number2;
+		}
+		Number2++;
+		cout << endl;
+	}
+}
+int main()
+{
+	PrintInveredPattern(ReadPositivNumberLessThan9("Please enter a positive number Less Than 9!\t"));
+	return 0;
+}
